@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="up">
+        <h1>CONTACTS</h1>
+        <button type="button" id="addcontact" onclick="addUser()">Add Contact</button>
+        <button type="button" id="exportToCSV" onclick="exportToCSV()">Export</button>
+        <br><br>
+        <form id="form1">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter First Name" required>
+            <br><br>
+
+            <label for="email">Email ID: </label>
+            <input type="email" name="email" id="email" placeholder="Enter EMail" required>
+            <br><br>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" maxlength="10" required>
+            <br><br>
+
+            <label for="date">Date Of Birth: </label>
+            <input type="date" name="date" id="date" required>
+            <br><br>
+
+            <label for="balance">Balance: </label>
+            <input type="number" id="balance" name="balance" required>
+            <br><br>
+
+            <select id="multiSelect" multiple>
+                <option value="Tamil">Tamil </option>
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Malayalam">Malayalam</option>
+            </select>
+            <br><br>
+
+            <input type="file" name="fileInput" id="fileInput" required></p> <br>
+
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="reset" id="cancelBtn">Reset</button>
+            <br><br>
+        </form>
+    </div>
+    <div class="down">
+        <div class="table1">
+            <table border="2px" id="contactTable">
+                <h1>TABLE</h1>
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Balance</th>
+                    <th>Language</th>
+                    <th>Photo</th>
+                    <th>Action</th>
+                </thead>
+                <tbody id="contactTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="TypeScript/form.js"></script>
+</body>
+
+</html>

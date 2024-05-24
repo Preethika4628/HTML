@@ -1,0 +1,25 @@
+#contactTable {
+    width: 100%;
+    border: 2px solid  rgb(69, 67, 67);
+}
+
+.up {
+    padding-left: 30px;
+    /* align-items: center; */
+    border : 2px solid black;
+}
+
+.table1 table {
+    text-align: center;
+    
+}
+
+.table1 table th{
+    height: 30px; 
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.table1 table td{
+    height: 30px; 
+}
